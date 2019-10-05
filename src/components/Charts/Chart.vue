@@ -263,9 +263,14 @@
                 this.chart.update(data)
             },
 
-            unbindWindowEvents () {
-                this.chart.unbindWindowEvents()
+            destroy () {
+                this.chart.destroy()
             }
+        },
+
+        beforeDestroy ()
+        {
+            this.destroy();
         }
     }
 </script>
